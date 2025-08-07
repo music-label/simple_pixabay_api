@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Java Script</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <div class="body_div">
+      <div class="up_div"><button class="up">Up</button></div>
+      <div class="main_div">
+        <div class="header_div">
+          <input class="input" type="text" />
+          <div class="search_div">
+            <button class="btn_search">Search</button>
+          </div>
+
+          <div class="div_param">
+            <button class="show_more">Show more</button>
+            <select class="select_count">
+              <option value="20">20</option>
+              <option value="50">50</option>
+              <option value="100">100</option>
+            </select>
+            <select class="select_type">
+              <option value="all">all</option>
+              <option value="photo">photo</option>
+              <option value="illustration">illustration</option>
+              <option value="vector">vector</option>
+            </select>
+          </div>
+          <div class="inf">
+            <p id="not_found" class="not_found">Nothing found :(</p>
+            <div class="spn"><span id="loader" class="loader_off"></span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="img_div">
+        <ul class="ul"></ul>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/mathjs@12.4.1/lib/browser/math.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
