@@ -19,7 +19,7 @@ async function get_pixabay(
   get_count_page,
   clearList = false
 ) {
-  const api_key = "50838718-1ae57605bce040a0883adb2b5";
+  const api_key = "";
   const url = `https://pixabay.com/api/?key=${api_key}&q=${value_from_input}&per_page=${get_select_count}&image_type=${get_select_type}&page=${get_count_page}`;
   try {
     loader.classList.remove("loader_off");
@@ -132,3 +132,4 @@ window.addEventListener("scroll", () => {
     up.style.display = "none";
   }
 });
+
