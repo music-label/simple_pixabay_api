@@ -1,3 +1,5 @@
+console.log(api_key);
+
 const main_div = document.querySelector(".main_div");
 const ul = document.querySelector(".ul");
 const input = document.querySelector(".input");
@@ -19,7 +21,6 @@ async function get_pixabay(
   get_count_page,
   clearList = false
 ) {
-  const api_key = "";
   const url = `https://pixabay.com/api/?key=${api_key}&q=${value_from_input}&per_page=${get_select_count}&image_type=${get_select_type}&page=${get_count_page}`;
   try {
     loader.classList.remove("loader_off");
@@ -132,4 +133,3 @@ window.addEventListener("scroll", () => {
     up.style.display = "none";
   }
 });
-
